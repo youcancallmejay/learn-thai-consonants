@@ -39,10 +39,18 @@ function userGuess() {
         playSound(quizCard);
         setTimeout(() => {
           startGame();
-        }, 4000);
+        }, 3000);
+      } else if (card.classList.contains("flipped")) {
+        return;
       } else {
         card.classList.toggle("flipped");
         card.style.backgroundColor = "red";
+        flippedCardText = card.querySelector(".the-back p");
+        flippedCardText.innerHTML = cardText;
+        let listenNowBtn = card.querySelector(".the-back button");
+        listenNowBtn.addEventListener("click", () => {
+          playSound(cardText);
+        });
       }
     });
   });
