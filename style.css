@@ -6,6 +6,15 @@
   padding: 0;
   font-size: 14px;
 }
+p {
+  font-size: 2rem;
+}
+.back-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+}
 
 .main-container {
   display: flex;
@@ -22,12 +31,13 @@
   transform-style: preserve-3d;
   transition: all 0.5s ease;
   border: 2px solid black;
-  flex: 1;
   margin-left: 1rem;
   margin-right: 1rem;
   border-radius: 1rem;
   background-color: white;
   color: black;
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -40,7 +50,7 @@
   }
 }
 
-.the-card p {
+.the-card.the-front p {
   margin-top: 50%;
   margin-bottom: 50%;
   font-size: 1.5rem;
@@ -56,16 +66,28 @@
 }
 
 .the-front {
+  position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
 
 .the-back {
+  /*
+  position: absolute;
+  */
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.back-flex {
+  display: flex;
+  flex-direction: column;
 }
 
 .game-container {
