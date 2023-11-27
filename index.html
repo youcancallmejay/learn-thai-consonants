@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/practice-page.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -20,7 +20,7 @@
             alt="Logo"
             width="30"
             height="24"
-            class="d-inline-block align-text-top" id="thaiFlag"
+            class="d-inline-block align-text-top"
           />
           Learn Thai Consonants
         </a>
@@ -40,35 +40,75 @@
             Start Learning
           </button>
         </div>
-
         <div class="cards-container">
           <div class="the-card col-md-4" id="first-card">
-
-            <div class="playAudiodiv">
-              <button type="button"  onclick="playSound()"" class="repeat-button-container"><img src="images/speaker-icon.svg" class="audio-button"></button>
-            </div>
-
             <div class="the-front">
-              <p id="letterOnly"></p><p id="alphabetWord"></p>
-            </div>
-            <div class="picAndEnglish">
-              <p id="englishName"></p>
+              <p></p>
             </div>
 
+            <div class="back-flex-container">
+              <div class="the-back">
+                <button class="speaker-button">
+                  <img
+                    src="images/speaker-icon.svg"
+                    class="speaker-icon"
+                    alt="image of speaker"
+                  />
+                </button>
+
+                <p>backside</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="the-card col-md-4" id="second-card">
+            <div class="the-front">
+              <p></p>
+            </div>
+            <div class="back-flex-container">
+              <div class="the-back">
+                <button class="speaker-button">
+                  <img
+                    src="images/speaker-icon.svg"
+                    class="speaker-icon"
+                    alt="image of speaker"
+                  />
+                </button>
+                <p>backside</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="the-card col-md-4" id="third-card">
+            <div class="the-front">
+              <p></p>
+            </div>
+
+            <div class="back-flex-container">
+              <div class="the-back">
+                <button class="speaker-button">
+                  <img
+                    src="images/speaker-icon.svg"
+                    class="speaker-icon"
+                    alt="image of speaker"
+                  />
+                </button>
+                <p>backside</p>
+              </div>
+            </div>
           </div>
         </div>
         <div>
-         
           <button
             type="button"
-            class="btn btn-success"
-            onclick="nextCard()"
+            class="btn btn-success audio-button"
+            onclick="playAudio()"
           >
-            Next Consonant
+            Replay audio
           </button>
         </div>
       </div>
     </div>
-    <script src="js/practice-page.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
