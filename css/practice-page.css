@@ -1,0 +1,168 @@
+/*===============
+    CSS RESET
+===============*/
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #2d2a4a;
+}
+
+.playAudiodiv{
+  display: flex;
+  flex-direction: column;
+}
+
+.repeat-button-container{
+  background-color: white;
+}
+
+
+button{
+border: none;
+}
+
+
+.the-card:hover {
+  box-shadow: 2px 2px 5px red;
+}
+
+.the-front {
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.picAndEnglish {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+}
+
+.start-button {
+  margin: 50px;
+}
+
+.speaker-icon {
+  height: 3rem;
+  width: 3rem;
+  background-color: red;
+}
+
+.speaker-button {
+  border: none;
+}
+
+.word-image {
+  width: 8.5rem; 
+}
+
+
+
+#englishName {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.the-card {
+  border: 2px solid black;
+  border-radius: 1rem;
+  background-color: white;
+  color: black;
+}
+
+
+@media (min-width: 768px) {
+  .the-card {
+    width: 25rem !important;
+    display: flex;
+    padding: 3rem;
+  }
+
+    #letterOnly {
+      color: red;
+      font-size: 8rem;
+      /* height: 10rem; */
+    }
+
+   #englishName {
+    font-size: 1.25rem;
+    color: purple;
+  }
+    #alphabetWord{
+      font-size: 2rem;
+      margin: 0px;
+      padding: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+  .the-card {
+    width: 20rem;
+    display: flex;
+  }
+    img {
+      width: 5.25rem;
+    }
+    .picAndEnglish{
+      align-items: center;
+      justify-content: center;
+    }
+
+    .the-front{
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    #englishName{
+      font-size: 1.5rem;
+    }
+
+    #alphabetWord{
+      font-size: 2rem;
+      margin-top: auto;
+    }
+    #letterOnly{
+      font-size: 10rem;
+      height: 13rem;
+      margin-bottom: 5px;
+      color: red;
+    }
+    
+    .audio-button{
+      width: 3rem;
+      background-color: white;
+      margin-left: 1rem;
+      margin-top: 1rem;
+    }
+    
+
+}
+
+#thaiFlag{
+  width: 3rem;
+}
+
